@@ -20,6 +20,19 @@
 </ul>
 
 You must upload a single zip file containing your entire work.
+## Description
+
+Dans <b>model_scolarity.ttl</b> et <b>model_organisation.ttl</b>, on créer les classes et les propriétés nécessaires à la description d'une école du réseau Polytech. 
+<ul>
+  <li><b>model_scolarity.ttl</b> : Focus sur les personnes composants l'école, les élèves et les professeur.</li>
+  <li><b>model_organisation.ttl</b> : Focus sur les filières (Major et Minor) et la classe Course pour décrire les cours disponibles à Polytech</li>
+</ul>
+Ces schémas forment le vocabulaire utiliser ensuite pour créer des instances de Professeurs, d'élève, de cours ... La création de ces instances à lieu dans les fichiers <b>Polytech_scolarity.ttl</b> et <b>Polytech_organisation.ttl</b> .
+<ul>
+  <li><b>Polytech_scolarity.ttl</b> : Focus sur la creation des professeur (Teacher) et des élèves délégué de filières </li>
+  <li><b>Polytech_organisation.ttl</b> : Focus sur la creation des filière majeur et mineurs ainsi que les cours qui les composes</li>
+</ul>
+Dans ces deux fichiers, on traite précisement uniquement de nos filières IHM et SD. Les informations sur nous deux (Gaymard Erwan et Barthélemy Passin-Cauneau) sont stockées dans <b>studentGaymard.ttl</b> et <b>studentPassinCauneau.ttl</b>.
 
 ## Workflow
 

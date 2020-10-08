@@ -1,1 +1,21 @@
+#################################################
 
+@prefix 	rdf: 	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .	# The RDF built-in vocabulary [RDF11-SCHEMA]
+@prefix 	rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>	.		# The RDF Schema vocabulary [RDF11-SCHEMA]
+@prefix 	xsd: 	<http://www.w3.org/2001/XMLSchema#>	.			# Datatypes
+
+@base 				<http://polytech.fr/organisation> .
+@prefix 	org: 	<http://polytech.fr/organisation#> .
+@prefix 	sco: 	<http://polytech.fr/scolarity#> .
+
+#################################################
+
+<#Major> a rdfs:Class ;
+rdfs:label		"Major"^^xsd:string ;
+rdfs:comment	"a Major is the main branch of education of a PolyStudent"^^xsd:string .
+
+<#has_minor> a rdf:Property ;
+rdfs:label		"Major"^^xsd:string ;
+rdfs:comment	"a Major is the main branch of education of a PolyStudent"^^xsd:string .
+rdfs:domain 	<#Major> ;
+rdfs:range 		<#Minor> .

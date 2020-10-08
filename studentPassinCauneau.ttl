@@ -11,10 +11,26 @@
 #################################################
 
 
-<#BarthelemyPassinCauneau> a <#PolyStudent> ;
+<#21600961> a <#PolyStudent> ;
+
+#### Person ####
+    <#firstname> "Barthelemy" ;
+    <#lastname> "Passin-Cauneau" ;
+    <#birthday> "1999-04-16"^^xsd:date ;
+    <#sexe> "M" ;
+    <#nationality> "FR" ;
+    <#phone> "+33675638760" ;
+    <#mail_private> "barthelemy.passin-cauneau@orange.fr" ;
+    <#shoesize> 45.5 ;
+
+#### Univ Member ####
+    <#id_univ> "#21600961";
+    <#mail_univ> "barthelemy.passin-cauneau@etu.unice.fr" ;
+
+#### Poly Student ####
     <#school_year> 5;
     <#polypoint> 16;
     <#toeic> true;
-    <#major> org:<#SI>;
-    <#minor> org:<#IHM>;
-    <#optional_courses> ;
+    <#major> org:SI;
+    <#minor> org:IHM;
+    <#opt_courses> org:EIIN949, org::EIIN942;

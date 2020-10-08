@@ -15,6 +15,6 @@
     <#school_year> 5;
     <#polypoint> 16;
     <#toeic> true;
-    <#major> org::<#SI>;
-    <#minor> org::<#IHM>;
+    <#major> org:<#SI>;
+    <#minor> org:<#IHM>;
     <#optional_courses> ;

@@ -66,7 +66,7 @@ rdfs:range		xsd:integer .
 <#UnivMember> a rdfs:Class ;
 rdfs:subClassOf	<#Person> ;
 rdfs:label		"UnivMember"^^xsd:string ;
-rdfs:comment	"a UnivMember is a Person tied to the University"^^xsd:string ;
+rdfs:comment	"a UnivMember is a Person tied to the University"^^xsd:string .
 
 
 <#id_univ> a rdf:Property ;
@@ -82,8 +82,8 @@ rdfs:domain 	<#UnivMember> ;
 rdfs:range		xsd:string .
 
 #################################################
-<#PolyStudent> a rdfs:Class .
-rdfs:subClassOf <#UnivMember> .
+<#PolyStudent> a rdfs:Class ;
+rdfs:subClassOf <#UnivMember> ;
 rdfs:label		"PolyStudent"^^xsd:string ;
 rdfs:comment	"a PolyStudent is a student of the University - thereby, a PolyStudent is a UnivMember"^^xsd:string .
 

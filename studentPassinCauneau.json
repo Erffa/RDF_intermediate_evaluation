@@ -1,0 +1,35 @@
+[
+    {"@id":"http://polytech.fr/organisation#EIIN927"},
+    {"@id":"http://polytech.fr/organisation#EIIN928"},
+    {"@id":"http://polytech.fr/organisation#EIIN933"},
+    {"@id":"http://polytech.fr/organisation#EIIN942"},
+    {"@id":"http://polytech.fr/organisation#EIIN949"},
+    {"@id":"http://polytech.fr/organisation#IHM"},
+    {"@id":"http://polytech.fr/organisation#SI"},
+    {"@id":"http://polytech.fr/scolarity#21600961",
+        "@type":["http://polytech.fr/scolarity#PolyStudent"],
+        "http://polytech.fr/scolarity#firstname":[{"@value":"Barthelemy"}],
+        "http://polytech.fr/scolarity#lastname":[{"@value":"Passin-Cauneau"}],
+        "http://polytech.fr/scolarity#birthday":[{"@value":"1999-04-16","@type":"http://www.w3.org/2001/XMLSchema#date"}],
+        "http://polytech.fr/scolarity#sexe":[{"@value":"M"}],
+        "http://polytech.fr/scolarity#nationality":[{"@value":"FR"}],
+        "http://polytech.fr/scolarity#phone":[{"@value":"+33675638760"}],
+        "http://polytech.fr/scolarity#mail_private":[{"@value":"barthelemy.passin-cauneau@orange.fr"}],
+        "http://polytech.fr/scolarity#shoesize":[{"@value":"45.5","@type":"http://www.w3.org/2001/XMLSchema#decimal"}],
+        "http://polytech.fr/scolarity#id_univ":[{"@value":"#21600961"}],
+        "http://polytech.fr/scolarity#mail_univ":[{"@value":"barthelemy.passin-cauneau@etu.unice.fr"}],
+        "http://polytech.fr/scolarity#school_year":[{"@value":5}],
+        "http://polytech.fr/scolarity#polypoint":[{"@value":16}],
+        "http://polytech.fr/scolarity#toeic":[{"@value":true}],
+        "http://polytech.fr/scolarity#major":[{"@id":"http://polytech.fr/organisation#SI"}],
+        "http://polytech.fr/scolarity#minor":[{"@id":"http://polytech.fr/organisation#IHM"}],
+        "http://polytech.fr/scolarity#opt_courses":[
+            {"@id":"http://polytech.fr/organisation#EIIN927"},
+            {"@id":"http://polytech.fr/organisation#EIIN928"},
+            {"@id":"http://polytech.fr/organisation#EIIN933"},
+            {"@id":"http://polytech.fr/organisation#EIIN942"},
+            {"@id":"http://polytech.fr/organisation#EIIN949"}
+        ]
+    },
+    {"@id":"http://polytech.fr/scolarity#PolyStudent"}
+]

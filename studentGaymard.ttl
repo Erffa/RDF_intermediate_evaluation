@@ -1,1 +1,32 @@
+#################################################
 
+@prefix 	rdf: 	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .	# The RDF built-in vocabulary [RDF11-SCHEMA]
+@prefix 	rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>	.		# The RDF Schema vocabulary [RDF11-SCHEMA]
+@prefix 	xsd: 	<http://www.w3.org/2001/XMLSchema#>	.			# Datatypes
+
+@base 				<http://polytech.fr/scolarity#> .
+@prefix 	org: 	<http://polytech.fr/organisation#> .
+@prefix 	sco: 	<http://polytech.fr/scolarity#> .
+
+#################################################
+
+<#21602254> a <#PolyStudent> ;
+# Person properties
+<#firstname>	"Erwan" ;
+<#lastname>		"Gaymard" ;
+<#birthday> 	"1997-07-25"^^xsd:date ;
+<#sexe> 		"M" ;
+<#nationality>	"FR" ;
+<#phone>		"+33664787878" ;
+<#mail_private> "erwanbo.gaymard@gmail.com" ;
+<#shoesize>		44.0 ;
+# UnivMember
+<#id_univ> 		"#21602254" ;
+<#mail_univ> 	"erwan.gaymard@etu.unice.fr" ;
+# PolyStudent
+<#school_year>	5 ;
+<#polypoint>	14 ;
+<#toeic>  		true ;
+<#major>		org:MAM ;
+<#minor>		org:SD ;
+<#opt_courses>	org:EIIN949 .

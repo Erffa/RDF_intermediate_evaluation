@@ -1,0 +1,48 @@
+#################################################
+
+@prefix		rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .	# The RDF built-in vocabulary [RDF11-SCHEMA]
+@prefix		rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .		# The RDF Schema vocabulary [RDF11-SCHEMA]
+@prefix		xsd:	<http://www.w3.org/2001/XMLSchema#> .			# Datatypes
+
+@base				<http://polytech.fr/organisation#> .
+@prefix		org:	<http://polytech.fr/organisation#> .
+@prefix		sco:	<http://polytech.fr/scolarity#> .
+
+#################################################
+
+
+#### Major ####
+<#SI> a <#Major> ;
+	<#has_supervisor> sco:YvesRoudier ;
+	<#has_minor> <#AL>, <#CASPAR>, <#IAM>, <#IHM>, <#IMAFA>, <#SD>, <#Web> .
+	
+<#MAM> a <#Major> ;
+	<#has_supervisor> sco:JeanBaptisteCaillau ;
+	<#has_minor> <#IMAFA>, <#INUM>, <#SD> .
+	
+#### Minor ####
+<#AL> a <#Minor> .
+
+<#CASPAR> a <#Minor> .
+
+<#IAM> a <#Minor> .
+    
+<#IHM> a <#Minor> ;
+	<#has_supervisor> sco:MarcoWinckler ;
+	# TODO : mandotory and optional courses
+	<#has_mandatory_courses> <#EIIN> ;
+	<#has_optional_courses> <#EIIN> .
+
+<#IMAFA> a <#Minor> .
+
+<#INUM> a <#Minor> .
+
+<#SD> a <#Minor> ;
+	<#has_supervisor> sco:LionelFillatre ;
+	# TODO : mandotory and optional courses
+	<#has_mandatory_courses> <#EIIN> ;
+	<#has_optional_courses> <#EIIN> .
+
+<#Web> a <#Minor> .
+
+### Courses ###

@@ -1,0 +1,45 @@
+#################################################
+
+@prefix		rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .	# The RDF built-in vocabulary [RDF11-SCHEMA]
+@prefix		rdfs:	<http://www.w3.org/2000/01/rdf-schema#>	.		# The RDF Schema vocabulary [RDF11-SCHEMA]
+@prefix		xsd:	<http://www.w3.org/2001/XMLSchema#>	.			# Datatypes
+
+@base				<http://polytech.fr/scolarity#> .
+@prefix		org:	<http://polytech.fr/organisation#> .
+@prefix		sco:	<http://polytech.fr/scolarity#> .
+
+#################################################
+
+### Teachers ###
+<#CatherineFaronZucker> a <#Teacher> ;
+	<#firstname> "Catherine" ;
+	<#lastname> "Faron Zucker" ;
+	<#sexe> "F" ;
+	<#mail_univ> "catherine.faron-zucker@univ-cotedazur.fr" .
+
+<#JeanBaptisteCaillau> a <#Teacher> ;
+	<#firstname> "Jean-Baptiste" ;
+	<#lastname> "Caillau" ;
+	<#sexe> "M" ;
+	<#mail_univ> "jean-baptiste.caillau@univ-cotedazur.fr" .
+
+<#LionelFillatre> a <#Teacher> ;
+	<#firstname> "Lionel" ;
+	<#lastname> "Fillatre" ;
+	<#sexe> "M" ;
+	<#mail_univ> "lionel.fillatre@univ-cotedazur.fr" .
+
+<#MarcoWinckler> a <#Teacher> ;
+	<#firstname> "Marco" ;
+	<#lastname> "Winckler" ;
+	<#sexe> "M" ;
+	<#mail_univ> "winckler@unice.fr" .
+
+<#YvesRoudier> a <#Teacher> ;
+	<#firstname> "Yves" ;
+	<#lastname> "Roudier" ;
+	<#sexe> "M" ;
+	<#mail_univ> "yves.roudier@univ-cotedazur.fr" .
+
+### Students (delegates) ###
+

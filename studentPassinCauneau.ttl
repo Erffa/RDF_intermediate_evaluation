@@ -1,1 +1,20 @@
+#################################################
 
+@prefix 	rdf: 	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .	# The RDF built-in vocabulary [RDF11-SCHEMA]
+@prefix 	rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>	.		# The RDF Schema vocabulary [RDF11-SCHEMA]
+@prefix 	xsd: 	<http://www.w3.org/2001/XMLSchema#>	.			# Datatypes
+
+@base 				<http://polytech.fr/scolarity> .
+@prefix 	org: 	<http://polytech.fr/organisation#> .
+@prefix 	sco: 	<http://polytech.fr/scolarity#> .
+
+#################################################
+
+
+<#BarthelemyPassinCauneau> a <#PolyStudent> ;
+    <#school_year> 5;
+    <#polypoint> 16;
+    <#toeic> true;
+    <#major> <#SI>;
+    <#minor> <#IHM>;
+    <#optional_courses> ;

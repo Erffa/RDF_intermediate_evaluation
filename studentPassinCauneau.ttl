@@ -4,7 +4,7 @@
 @prefix 	rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>	.		# The RDF Schema vocabulary [RDF11-SCHEMA]
 @prefix 	xsd: 	<http://www.w3.org/2001/XMLSchema#>	.			# Datatypes
 
-@base 				<http://polytech.fr/scolarity> .
+@base 				<http://polytech.fr/scolarity#> .
 @prefix 	org: 	<http://polytech.fr/organisation#> .
 @prefix 	sco: 	<http://polytech.fr/scolarity#> .
 
@@ -24,13 +24,13 @@
     <#shoesize> 45.5 ;
 
 #### Univ Member ####
-    <#id_univ> "#21600961";
+    <#id_univ> "#21600961" ;
     <#mail_univ> "barthelemy.passin-cauneau@etu.unice.fr" ;
 
 #### Poly Student ####
-    <#school_year> 5;
-    <#polypoint> 16;
-    <#toeic> true;
-    <#major> org:SI;
-    <#minor> org:IHM;
-    <#opt_courses> org:EIIN949, org::EIIN942;
+    <#school_year> 5 ;
+    <#polypoint> 16 ;
+    <#toeic> true ;
+    <#major> org:SI ;
+    <#minor> org:IHM ;
+    <#opt_courses> org:EIIN927, org:EIIN928, org:EIIN933, org:EIIN942, org:EIIN949 .

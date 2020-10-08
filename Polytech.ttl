@@ -4,18 +4,52 @@
 @prefix 	rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>	.		# The RDF Schema vocabulary [RDF11-SCHEMA]
 @prefix 	xsd: 	<http://www.w3.org/2001/XMLSchema#>	.			# Datatypes
 
-@base 				<http://polytech.fr/organisation> .
+@base 				<http://polytech.fr/organisation#> .
 @prefix 	org: 	<http://polytech.fr/organisation#> .
 @prefix 	sco: 	<http://polytech.fr/scolarity#> .
 
 #################################################
 
-<#Major> a rdfs:Class ;
-rdfs:label		"Major"^^xsd:string ;
-rdfs:comment	"a Major is the main branch of education of a PolyStudent"^^xsd:string .
+#### Major ####
+<#SI> a <#Major> ;
+    <#has_minor> <#AL>, <#SD>, <#CASPAR>, <#IHM>, <#IAM>, <#Web>, <#IMAFA> ;
+    <#has_supervisor> sco:YvesRoudier;
+    <#has_opt_courses> .
 
-<#has_minor> a rdf:Property ;
-rdfs:label		"Major"^^xsd:string ;
-rdfs:comment	"a Major is the main branch of education of a PolyStudent"^^xsd:string .
-rdfs:domain 	<#Major> ;
-rdfs:range 		<#Minor> .
+<#MAM> a <#Major> ;
+    <#has_minor> <#IMAFA>, <#SD>, <#INUM> ;
+    <#has_supervisor> sco:JeanBaptisteCaillau;
+    <#has_opt_courses> .
+
+#### Minor ####
+<#AL> a <#Minor> ;
+    <#has_courses> ;
+    <#has_supervisor> sco:PhilippeCollet.
+
+<#CASPAR> a <#Minor> ;
+    <#has_courses> ;
+    <#has_supervisor> sco:KarimaBoudaoud.
+
+<#IHM> a <#Minor> ;
+    <#has_courses> ;
+    <#has_supervisor> sco:MarcoWinckler.
+
+<#IAM> a <#Minor> ;
+    <#has_courses> ;
+    <#has_supervisor> sco:StephaneLavirotte.
+
+<#Web> a <#Minor> ;
+    <#has_courses> ;
+    <#has_supervisor> sco:CatherineFaronZucker.
+
+<#SD> a <#Minor> ;
+    <#has_courses> ;
+    <#has_supervisor> sco:LionelFillatre.
+
+<#IMAFA> a <#Minor> ;
+    <#has_courses> ;
+    <#has_supervisor> sco:DidierAuroux.
+
+<#INUM> a <#Minor> ;
+    <#has_courses> ;
+    <#has_supervisor> sco:CedricBoulbe.

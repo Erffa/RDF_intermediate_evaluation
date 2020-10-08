@@ -29,7 +29,6 @@ Turtle Validator      : http://ttl.summerofcode.be/ <br>
 RDF Converter         : https://www.easyrdf.org/converter <br>
 Visualization RDF/XML : https://www.w3.org/RDF/Validator/rdfval
 
-https://www.w3.org/TR/rdf-schema/#ch_classes
-
-## Files
+Ressources utiles sur RDF : <br>
+https://www.w3.org/TR/rdf-schema/#ch_classes <br>
 

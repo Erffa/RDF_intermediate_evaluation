@@ -4,7 +4,7 @@
 @prefix		rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .		# The RDF Schema vocabulary [RDF11-SCHEMA]
 @prefix		xsd:	<http://www.w3.org/2001/XMLSchema#> .			# Datatypes
 
-@base				<http://polytech.fr/organisation#> .
+@base			<http://polytech.fr/organisation#> .
 @prefix		org:	<http://polytech.fr/organisation#> .
 @prefix		sco:	<http://polytech.fr/scolarity#> .
 
@@ -14,11 +14,21 @@
 #### Major ####
 <#SI> a <#Major> ;
 	<#has_supervisor> sco:YvesRoudier ;
-	<#has_minor> <#AL>, <#CASPAR>, <#IAM>, <#IHM>, <#IMAFA>, <#SD>, <#Web> .
+	<#has_minor> 
+		<#AL> , 
+		<#CASPAR> ,
+		<#IAM> ,
+		<#IHM> ,
+		<#IMAFA> ,
+		<#SD>,
+		<#Web> .
 	
 <#MAM> a <#Major> ;
 	<#has_supervisor> sco:JeanBaptisteCaillau ;
-	<#has_minor> <#IMAFA>, <#INUM>, <#SD> .
+	<#has_minor> 
+		<#IMAFA> ,
+		<#INUM> ,
+		<#SD> .
 	
 #### Minor ####
 <#AL> a <#Minor> .
@@ -26,7 +36,7 @@
 <#CASPAR> a <#Minor> .
 
 <#IAM> a <#Minor> .
-    
+
 <#IHM> a <#Minor> ;
 	<#has_supervisor> sco:MarcoWinckler ;
 	# TODO : mandotory and optional courses
@@ -39,10 +49,115 @@
 
 <#SD> a <#Minor> ;
 	<#has_supervisor> sco:LionelFillatre ;
-	# TODO : mandotory and optional courses
-	<#has_mandatory_courses> <#EIIN> ;
-	<#has_optional_courses> <#EIIN> .
+	<#has_mandatory_courses>
+		<#EIIN934> ,
+		<#EIIN935> ,
+		<#EIIN938> ,
+		<#EIIN939> ,
+		<#EIIN947> ,
+		<#EIIN948> ;
+	<#has_optional_courses>
+		<#EIIN933> ,
+		<#EIIN936> ,
+		<#EIIN942> ,
+		<#EIIN944> ,
+		<#EIIN949> ,
+		<#EIIN951> ,
+		<#EIIN945> .
 
 <#Web> a <#Minor> .
 
 ### Courses ###
+<#EIIN933> a <#Course> ;
+	<#id_course> "EIIN933" ;
+	<#subject> "From Shallow to Deep Learning for Multimedia data" ;
+	<#has_supervisor> sco:FredericPrecioso ;
+	<#has_teacher> sco:FredericPrecioso .
+
+<#EIIN934> a <#Course> ;
+	<#id_course> "EIIN934" ;
+	<#subject> "Applied Artificial Intelligence" ;
+	<#has_supervisor> sco:MarcAntonini ;
+	<#has_teacher> sco:MarcAntonini .
+
+<#EIIN935> a <#Course> ;
+	<#id_course> "EIIN935" ;
+	<#subject> "Data Science" ;
+	<#has_supervisor> sco:PierreAlliez ;
+	<#has_teacher> sco:PierreAlliez .
+
+<#EIIN936> a <#Course> ;
+	<#id_course> "EIIN936" ;
+	<#subject> "Machine Learning: Theory and algorithms" ;
+	<#has_supervisor> sco:GiovanniNeglia ;
+	<#has_teacher> sco:GiovanniNeglia .
+
+<#EIIN938> a <#Course> ;
+	<#id_course> "EIIN938" ;
+	<#subject> "Distributed Data Management" ;
+	<#has_supervisor> sco:PierreMathieu ;
+	<#has_teacher> sco:PierreMathieu .
+
+<#EIIN939> a <#Course> ;
+	<#id_course> "EIIN939" ;
+	<#subject> "Advanced Topics in Deep Learning" ;
+	<#has_supervisor> sco:LionelFillatre ;
+	<#has_teacher> sco:LionelFillatre .
+
+<#EIIN942> a <#Course> ;
+	<#id_course> "EIIN942" ;
+	<#subject> "Interagir dans un monde 3D" ;
+	<#has_supervisor> sco:DianeLingrand ;
+	<#has_teacher> sco:DianeLingrand .
+
+<#EIIN944> a <#Course> ;
+	<#id_course> "EIIN944" ;
+	<#subject> "Réalité virtuelle" ;
+	<#has_supervisor> sco:LeoDonati ;
+	<#has_teacher> sco:LeoDonati .
+
+<#EIIN945> a <#Course> ;
+	<#id_course> "EIIN945" ;
+	<#subject> "Security and Privacy 3.0" ;
+	<#has_supervisor> sco:KarimaBoudaoud ;
+	<#has_teacher> sco:KarimaBoudaoud .
+
+<#EIIN947> a <#Course> ;
+	<#id_course> "EIIN947" ;
+	<#subject> "Big Data Technologies" ;
+	<#has_supervisor> sco:LionelFillatre ;
+	<#has_teacher> sco:LionelFillatre .
+
+<#EIIN948> a <#Course> ;
+	<#id_course> "EIIN948" ;
+	<#subject> "Machine Learning for Image Analysis" ;
+	<#has_supervisor> sco:XavierDescombes ;
+	<#has_teacher> sco:XavierDescombes .
+
+<#EIIN949> a <#Course> ;
+	<#id_course> "EIIN949" ;
+	<#subject> "Web Data" ;
+	<#has_supervisor> sco:CatherineFaronZucker ;
+	<#has_teacher> sco:CatherineFaronZucker .
+
+<#EIIN951> a <#Course> ;
+	<#id_course> "EIIN951" ;
+	<#subject> "Web Semantic" ;
+	<#has_supervisor> sco:CatherineFaronZucker ;
+	<#has_teacher> sco:CatherineFaronZucker .
+
+# - mentionned teachers - #
+#CatherineFaronZucker
+#DianeLingrand
+#FredericPrecioso
+#GiovanniNeglia
+#JeanBaptisteCaillau
+#KarimaBoudaoud
+#LeoDonati
+#LionelFillatre
+#MarcAntonini
+#MarcoWinckler
+#PierreAlliez
+#PierreMathieu
+#XavierDescombes
+#YvesRoudier

@@ -29,4 +29,5 @@
 <#toeic>  		true ;
 <#major>		org:MAM ;
 <#minor>		org:SD ;
-<#opt_courses>	org:EIIN933, org:EIIN936, org:EIIN945, org:EIIN949, org:EIIN951 .
+<#opt_courses>	org:EIIN933, org:EIIN936, org:EIIN945, org:EIIN949, org:EIIN951 ;
+<#has_block_release> false .

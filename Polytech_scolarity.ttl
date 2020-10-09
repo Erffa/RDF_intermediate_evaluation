@@ -17,11 +17,41 @@
 	<#sexe> "F" ;
 	<#mail_univ> "catherine.faron-zucker@univ-cotedazur.fr" .
 
+<#DianeLingrand> a <#Teacher> ;
+	<#firstname> "Diane" ;
+	<#lastname> "Lingrand" ;
+	<#sexe> "F" ;
+	<#mail_univ> "diane.lingrand@univ-cotedazur.fr" .
+
+<#FredericPrecioso> a <#Teacher> ;
+	<#firstname> "Frédéric" ;
+	<#lastname> "Precioso" ;
+	<#sexe> "M" ;
+	<#mail_univ> "frederic.precioso@univ-cotedazur.fr" .
+
+<#GiovanniNeglia> a <#Teacher> ;
+	<#firstname> "Giovanni" ;
+	<#lastname> "Neglia" ;
+	<#sexe> "M" ;
+	<#mail_univ> "giovanni.neglia@univ-cotedazur.fr" .
+
 <#JeanBaptisteCaillau> a <#Teacher> ;
 	<#firstname> "Jean-Baptiste" ;
 	<#lastname> "Caillau" ;
 	<#sexe> "M" ;
 	<#mail_univ> "jean-baptiste.caillau@univ-cotedazur.fr" .
+
+<#KarimaBoudaoud> a <#Teacher> ;
+	<#firstname> "Karima" ;
+	<#lastname> "Boudaoud" ;
+	<#sexe> "F" ;
+	<#mail_univ> "karima.boudaoud@univ-cotedazur.fr" .
+
+<#LeoDonati> a <#Teacher> ;
+	<#firstname> "Leo" ;
+	<#lastname> "Donati" ;
+	<#sexe> "M" ;
+	<#mail_univ> "leo.donati@univ-cotedazur.fr" .
 
 <#LionelFillatre> a <#Teacher> ;
 	<#firstname> "Lionel" ;
@@ -29,11 +59,35 @@
 	<#sexe> "M" ;
 	<#mail_univ> "lionel.fillatre@univ-cotedazur.fr" .
 
+<#MarcAntonini> a <#Teacher> ;
+	<#firstname> "Marc" ;
+	<#lastname> "Antonini" ;
+	<#sexe> "M" ;
+	<#mail_univ> "marc.antonini@univ-cotedazur.fr" .
+
 <#MarcoWinckler> a <#Teacher> ;
 	<#firstname> "Marco" ;
 	<#lastname> "Winckler" ;
 	<#sexe> "M" ;
 	<#mail_univ> "winckler@unice.fr" .
+
+<#PierreAlliez> a <#Teacher> ;
+	<#firstname> "Pierre" ;
+	<#lastname> "Alliez" ;
+	<#sexe> "M" ;
+	<#mail_univ> "pierre.alliez@inria.fr" .
+
+<#PierreMathieu> a <#Teacher> ;
+	<#firstname> "Pierre" ;
+	<#lastname> "Mathieu" ;
+	<#sexe> "M" ;
+	<#mail_univ> "pierre.mathieu@univ-cotedazur.fr" .
+
+<#XavierDescombes> a <#Teacher> ;
+	<#firstname> "Xavier" ;
+	<#lastname> "Descombes" ;
+	<#sexe> "M" ;
+	<#mail_univ> "xavier.descombes@univ-cotedazur.fr" .
 
 <#YvesRoudier> a <#Teacher> ;
 	<#firstname> "Yves" ;

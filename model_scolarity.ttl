@@ -10,123 +10,129 @@
 
 #################################################
 <#Person> a rdfs:Class ;
-rdfs:label		"Person"^^xsd:string ;
-rdfs:comment	"a Person is a human being"^^xsd:string .
+  rdfs:label		"Person"^^xsd:string ;
+  rdfs:comment	"a Person is a human being"^^xsd:string .
 
 
 <#firstname> a rdf:Property ;
-rdfs:label		"firstname"^^xsd:string ;
-rdfs:comment	"the first name of a Person"^^xsd:string ;
-rdfs:domain		<#Person> ;
-rdfs:range		xsd:Name .
+  rdfs:label		"firstname"^^xsd:string ;
+  rdfs:comment	"the first name of a Person"^^xsd:string ;
+  rdfs:domain		<#Person> ;
+  rdfs:range		xsd:Name .
 
 <#lastname> a rdf:Property ;
-rdfs:label		"lastname"^^xsd:string ;
-rdfs:comment	"the last name of a Person"^^xsd:string ;
-rdfs:domain		<#Person> ;
-rdfs:range		xsd:Name .
+  rdfs:label		"lastname"^^xsd:string ;
+  rdfs:comment	"the last name of a Person"^^xsd:string ;
+  rdfs:domain		<#Person> ;
+  rdfs:range		xsd:Name .
 
 <#birthday> a rdf:Property ;
-rdfs:label		"birthday"^^xsd:string ;
-rdfs:comment	"the birthday date of a Person"^^xsd:string ;
-rdfs:domain		<#Person> ;
-rdfs:range		xsd:date .
+  rdfs:label		"birthday"^^xsd:string ;
+  rdfs:comment	"the birthday date of a Person"^^xsd:string ;
+  rdfs:domain		<#Person> ;
+  rdfs:range		xsd:date .
 
 <#sexe> a rdf:Property ;
-rdfs:label		"sexe"^^xsd:string ;
-rdfs:comment	"the sexe of a Person ; can be female, male or none"^^xsd:string ;
-rdfs:domain		<#Person> ;
-rdfs:range		xsd:string .
+  rdfs:label		"sexe"^^xsd:string ;
+  rdfs:comment	"the sexe of a Person ; can be female, male or none"^^xsd:string ;
+  rdfs:domain		<#Person> ;
+  rdfs:range		xsd:string .
 
 <#nationality> a rdf:Property ;
-rdfs:label		"nationality"^^xsd:string ;
-rdfs:comment	"the nationality of a Person"^^xsd:string ;
-rdfs:domain		<#Person> ;
-rdfs:range		xsd:string .
+  rdfs:label		"nationality"^^xsd:string ;
+  rdfs:comment	"the nationality of a Person"^^xsd:string ;
+  rdfs:domain		<#Person> ;
+  rdfs:range		xsd:string .
 
 <#phone> a rdf:Property ;
-rdfs:label		"phone"^^xsd:string ;
-rdfs:comment	"the private number of a Person"^^xsd:string ;
-rdfs:domain		<#Person> ;
-rdfs:range		xsd:string .
+  rdfs:label		"phone"^^xsd:string ;
+  rdfs:comment	"the private number of a Person"^^xsd:string ;
+  rdfs:domain		<#Person> ;
+  rdfs:range		xsd:string .
 
 <#mail_private> a rdf:Property ;
-rdfs:label		"mail_private"^^xsd:string ;
-rdfs:comment	"the private mail of a Person (if Person is an UnivMember, mail_private should differ from mail_univ)"^^xsd:string ;
-rdfs:domain		<#Person> ;
-rdfs:range		xsd:string .
+  rdfs:label		"mail_private"^^xsd:string ;
+  rdfs:comment	"the private mail of a Person (if Person is an UnivMember, mail_private should differ from mail_univ)"^^xsd:string ;
+  rdfs:domain		<#Person> ;
+  rdfs:range		xsd:string .
 
 <#shoesize> a rdf:Property ;
-rdfs:label		"shoesize"^^xsd:string ;
-rdfs:comment	"the shoe size of a Human, in French convention"^^xsd:string ;
-rdfs:domain		<#Person> ;
-rdfs:range		xsd:integer .
+  rdfs:label		"shoesize"^^xsd:string ;
+  rdfs:comment	"the shoe size of a Human, in French convention"^^xsd:string ;
+  rdfs:domain		<#Person> ;
+  rdfs:range		xsd:integer .
 
 #################################################
 <#UnivMember> a rdfs:Class ;
-rdfs:subClassOf	<#Person> ;
-rdfs:label		"UnivMember"^^xsd:string ;
-rdfs:comment	"a UnivMember is a Person tied to the University"^^xsd:string .
+  rdfs:subClassOf	<#Person> ;
+  rdfs:label		"UnivMember"^^xsd:string ;
+  rdfs:comment	"a UnivMember is a Person tied to the University"^^xsd:string .
 
 
 <#id_univ> a rdf:Property ;
-rdfs:label		"id_univ"^^xsd:string ;
-rdfs:comment	"an ID of 8 digits to identify every UnivMember"^^xsd:string ;
-rdfs:domain 	<#UnivMember> ;
-rdfs:range		xsd:string .
+  rdfs:label		"id_univ"^^xsd:string ;
+  rdfs:comment	"an ID of 8 digits to identify every UnivMember"^^xsd:string ;
+  rdfs:domain 	<#UnivMember> ;
+  rdfs:range		xsd:string .
 
 <#mail_univ> a rdf:Property ;
-rdfs:label		"mail_univ"^^xsd:string ;
-rdfs:comment	"the professional maill of an UnivMember (ex : firstname.lastname@etu.unice.fr)"^^xsd:string ;
-rdfs:domain 	<#UnivMember> ;
-rdfs:range		xsd:string .
+  rdfs:label		"mail_univ"^^xsd:string ;
+  rdfs:comment	"the professional maill of an UnivMember (ex : firstname.lastname@etu.unice.fr)"^^xsd:string ;
+  rdfs:domain 	<#UnivMember> ;
+  rdfs:range		xsd:string .
 
 #################################################
 <#PolyStudent> a rdfs:Class ;
-rdfs:subClassOf <#UnivMember> ;
-rdfs:label		"PolyStudent"^^xsd:string ;
-rdfs:comment	"a PolyStudent is a student of the University - thereby, a PolyStudent is a UnivMember"^^xsd:string .
+  rdfs:subClassOf <#UnivMember> ;
+  rdfs:label		"PolyStudent"^^xsd:string ;
+  rdfs:comment	"a PolyStudent is a student of the University - thereby, a PolyStudent is a UnivMember"^^xsd:string .
 
 <#school_year> a rdf:Property ;
-rdfs:label		"school_year"^^xsd:string ;
-rdfs:comment	"the year of study of a PolyStudent"^^xsd:string ;
-rdfs:domain 	<#PolyStudent> ;
-rdfs:range		xsd:integer .
+  rdfs:label		"school_year"^^xsd:string ;
+  rdfs:comment	"the year of study of a PolyStudent"^^xsd:string ;
+  rdfs:domain 	<#PolyStudent> ;
+  rdfs:range		xsd:integer .
 
 <#polypoint> a rdf:Property ;
-rdfs:label		"polypoint"^^xsd:string ;
-rdfs:comment	"the number of polypoint of a PolyStudent"^^xsd:string ;
-rdfs:domain 	<#PolyStudent> ;
-rdfs:range		xsd:integer .
+  rdfs:label		"polypoint"^^xsd:string ;
+  rdfs:comment	"the number of polypoint of a PolyStudent"^^xsd:string ;
+  rdfs:domain 	<#PolyStudent> ;
+  rdfs:range		xsd:integer .
 
 <#toeic> a rdf:Property ;
-rdfs:label		"toeic"^^xsd:string ;
-rdfs:comment	"a boolean, true if a PolyStudent has validated its TOEIC"^^xsd:string ;
-rdfs:domain 	<#PolyStudent> ;
-rdfs:range		xsd:boolean .
+  rdfs:label		"toeic"^^xsd:string ;
+  rdfs:comment	"a boolean, true if a PolyStudent has validated its TOEIC"^^xsd:string ;
+  rdfs:domain 	<#PolyStudent> ;
+  rdfs:range		xsd:boolean .
 
 <#major> a rdf:Property ;
-rdfs:label		"major"^^xsd:string ;
-rdfs:comment	"the Major of a PolyStudent"^^xsd:string ;
-rdfs:domain 	<#PolyStudent> ;
-rdfs:range		org:Major .
+  rdfs:label		"major"^^xsd:string ;
+  rdfs:comment	"the Major of a PolyStudent"^^xsd:string ;
+  rdfs:domain 	<#PolyStudent> ;
+  rdfs:range		org:Major .
 
 <#minor> a rdf:Property ;
-rdfs:label		"minor"^^xsd:string ;
-rdfs:comment	"the Minor of a PolyStudent ; must match a Minor of the Major list of Minor"^^xsd:string ;
-rdfs:domain 	<#PolyStudent> ;
-rdfs:range		org:Minor .
+  rdfs:label		"minor"^^xsd:string ;
+  rdfs:comment	"the Minor of a PolyStudent ; must match a Minor of the Major list of Minor"^^xsd:string ;
+  rdfs:domain 	<#PolyStudent> ;
+  rdfs:range		org:Minor .
 
 <#optional_courses> a rdf:Property ;
-rdfs:label		"optional_courses"^^xsd:string ;
-rdfs:comment	"an optional course choosen by a PolyStudent ; must match a Course from the Minor list of Courses"^^xsd:string ;
-rdfs:domain 	<#PolyStudent> ;
-rdfs:range		org:Course .
+  rdfs:label		"optional_courses"^^xsd:string ;
+  rdfs:comment	"an optional course choosen by a PolyStudent ; must match a Course from the Minor list of Courses"^^xsd:string ;
+  rdfs:domain 	<#PolyStudent> ;
+  rdfs:range		org:Course .
+
+<#has_block_release> a rdf:Property ;
+  rdfs:label		"has_block_release"^^xsd:string ;
+  rdfs:comment	"boolean, true if a PolyStudent has a bllock release"^^xsd:string ;
+  rdfs:domain 	<#PolyStudent> ;
+  rdfs:range		xsd:boolean .
 
 #################################################
 <#Teacher> a rdfs:Class ;
-rdfs:subClassOf <#UnivMember> ;
-rdfs:label		"Teacher"^^xsd:string ;
-rdfs:comment	"a Teacher is a UnivMember that provide lessons to PolyStudents ; a Teacher can do different Courses and can supervise a Major or a Minor"^^xsd:string .
+  rdfs:subClassOf <#UnivMember> ;
+  rdfs:label		"Teacher"^^xsd:string ;
+  rdfs:comment	"a Teacher is a UnivMember that provide lessons to PolyStudents ; a Teacher can do different Courses and can supervise a Major or a Minor"^^xsd:string .
 
 #################################################

@@ -96,4 +96,47 @@
 	<#mail_univ> "yves.roudier@univ-cotedazur.fr" .
 
 ### Students (delegates) ###
+### Students (delegates) ###
+<#21601834> a <#PolyStudent> ;  
+	# Person properties
+	<#firstname> "Ilea" ;
+	<#lastname> "Dufraigne" ;
+	<#birthday> "1998-10-19"^^xsd:date ;
+	<#sexe> "F" ;
+	<#nationality> "FR" ;
+	<#phone> "+33662766821" ; 
+	<#mail_private> "ileaduf@gmail.com" ;
+	<#shoesize> 40.0 ;
+	# UnivMember
+	<#id_univ> "#21601834" ;
+	<#mail_univ> "ilea.dufraigne@etu.univ-cotedazur.fr" ;
+	# PolyStudent
+	<#school_year> 5 ;
+	<#polypoint> 32 ;
+	<#toeic> true ;
+	<#major> org:MAM ;
+	<#minor> org:SD ;
+	<#opt_courses>	org:EIIN933 , org:EIIN944 , org:EIIN945 , org:EIIN949 ;
+	<#has_block_release> true .
 
+<#21601080> a <#PolyStudent> ;  
+	# Person properties
+	<#firstname> "Hugo" ;
+	<#lastname> "Lavezac" ;
+	<#birthday> "1998-12-17"^^xsd:date ;
+	<#sexe> "M" ;
+	<#nationality> "FR" ;
+	<#phone> "+33628537000" ; 
+	<#mail_private> "hugolavezac@gmail.com" ;
+	<#shoesize> 42.0 ;
+	# UnivMember
+	<#id_univ> "#21601080" ;
+	<#mail_univ> "hugo.lavezac@etu.univ-cotedazur.fr" ;
+	# PolyStudent
+	<#school_year>	5 ;
+	<#polypoint>	0 ;
+	<#toeic> false ;
+	<#major> org:MAM ;
+	<#minor> org:SD ;
+	<#opt_courses>	org:EIIN933 , org:EIIN936 , org:EIIN942 , org:EIIN944 , org:EIIN945 ;
+	<#has_block_release> false .

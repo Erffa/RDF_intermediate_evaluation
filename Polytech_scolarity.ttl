@@ -96,7 +96,6 @@
 	<#mail_univ> "yves.roudier@univ-cotedazur.fr" .
 
 ### Students (delegates) ###
-### Students (delegates) ###
 <#21601834> a <#PolyStudent> ;  
 	# Person properties
 	<#firstname> "Ilea" ;

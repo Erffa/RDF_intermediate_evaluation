@@ -133,8 +133,8 @@
 	<#id_univ> "#21601080" ;
 	<#mail_univ> "hugo.lavezac@etu.univ-cotedazur.fr" ;
 	# PolyStudent
-	<#school_year>	5 ;
-	<#polypoint>	0 ;
+	<#school_year> 5 ;
+	<#polypoint> 0 ;
 	<#toeic> false ;
 	<#major> org:MAM ;
 	<#minor> org:SD ;

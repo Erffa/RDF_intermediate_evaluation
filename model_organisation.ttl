@@ -10,14 +10,14 @@
 
 ##################################################
 <#Major> a rdfs:Class ;
-	rdfs:label		"Major"^^xsd:string ;
-	rdfs:comment	"a Major is the main branch of education of a PolyStudent"^^xsd:string .
+	rdfs:label "Major"^^xsd:string ;
+	rdfs:comment "a Major is the main branch of education of a PolyStudent"^^xsd:string .
 
 <#has_minor> a rdf:Property ;
-	rdfs:label		"Major"^^xsd:string ;
-	rdfs:comment	"a Major is the main branch of education of a PolyStudent"^^xsd:string .
-	rdfs:domain 	<#Major> ;
-	rdfs:range 		<#Minor> .
+	rdfs:label "Major"^^xsd:string ;
+	rdfs:comment "a Major is the main branch of education of a PolyStudent"^^xsd:string .
+	rdfs:domain <#Major> ;
+	rdfs:range <#Minor> .
 
 ##################################################
 <#Minor> a rdfs:Class ;
@@ -25,46 +25,52 @@
 	rdfs:comment	"a Minor is a sub-branch of education of a PolyStudent"^^xsd:string .
 
 <#has_courses> a rdf:Property ;
-	rdfs:label		"has_courses"^^xsd:string ;
-	rdfs:comment	"a Course of a Minor ; can be optional or mandatory"^^xsd:string ;
+	rdfs:label "has_courses"^^xsd:string ;
+	rdfs:comment "a Course of a Minor ; can be optional or mandatory"^^xsd:string ;
 	rdfs:domain <#Minor> ;
-	rdfs:range	<#Course> .
+	rdfs:range <#Course> .
 
 <#has_mandatory_courses> a rdf:Property ;
 	rdfs:subPropertyOf	<#has_courses> ;
-	rdfs:label		"has_mandatory_courses"^^xsd:string ;
-	rdfs:comment	"an optional Course of a Minor"^^xsd:string .
+	rdfs:label "has_mandatory_courses"^^xsd:string ;
+	rdfs:comment "an optional Course of a Minor"^^xsd:string .
 
 <#has_optional_courses> a rdf:Property ;
 	rdfs:subPropertyOf	<#has_courses> ;
-	rdfs:label		"has_optional_courses"^^xsd:string ;
-	rdfs:comment	"an optional Course of a Minor"^^xsd:string .
+	rdfs:label "has_optional_courses"^^xsd:string ;
+	rdfs:comment "an optional Course of a Minor"^^xsd:string .
+
+<#has_representative> a rdf:Property ;
+	rdfs:label "has_representative"^^xsd:string ;
+	rdfs:comment "the representative of Minor - each Minor should have two representatives, one with a block release and one without"^^xsd:string ;
+	rdfs:domain <#Minor> ;
+	rdfs:range <#PolyStudent> .
 
 ##################################################
 <#Course> a rdfs:Class .
 
 <#id_course> a rdf:Property ;
-	rdfs:label		"id_course"^^xsd:string ;
-	rdfs:comment	"the id_course is a unique identifier of a Course"^^xsd:string ;
-	rdfs:domain 	<#Course> ;
-	rdfs:range		xsd:string .
-
-<#has_supervisor> a rdf:Property ;
-	rdfs:label		"has_supervisor"^^xsd:string ;
-	rdfs:comment	"the supervisor of a Major, a Minor or a Course"^^xsd:string .
-	rdfs:domain		<#Major>, <#Minor>, <#Course> ;
-	rdfs:range		sco:Teacher .
+	rdfs:label "id_course"^^xsd:string ;
+	rdfs:comment "the id_course is a unique identifier of a Course"^^xsd:string ;
+	rdfs:domain <#Course> ;
+	rdfs:range xsd:string .
 
 <#subject> a rdf:Property ;
-	rdfs:label		"subject"^^xsd:string ;
-	rdfs:comment	"the name of a Course"^^xsd:string ;
-	rdfs:domain 	<#Course> ;
-	rdfs:range		xsd:string .
+	rdfs:label "subject"^^xsd:string ;
+	rdfs:comment "the name of a Course"^^xsd:string ;
+	rdfs:domain <#Course> ;
+	rdfs:range xsd:string .
 
 <#has_teacher> a rdf:Property ;
-	rdfs:label		"has_teacher"^^xsd:string ;
-	rdfs:comment	"a Teacher of a Course"^^xsd:string ;
-	rdfs:domain 	<#Course> ;
-	rdfs:range		 sco:Teacher .
+	rdfs:label "has_teacher"^^xsd:string ;
+	rdfs:comment "a Teacher of a Course - one of them must be the represenetative of the Course"^^xsd:string ;
+	rdfs:domain <#Course> ;
+	rdfs:range sco:Teacher .
 
 #################################################
+
+<#has_supervisor> a rdf:Property ;
+	rdfs:label "has_supervisor"^^xsd:string ;
+	rdfs:comment "the supervisor of a Major, a Minor or a Course"^^xsd:string .
+	rdfs:domain <#Major>, <#Minor>, <#Course> ;
+	rdfs:range sco:Teacher .

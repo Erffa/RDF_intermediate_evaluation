@@ -39,9 +39,20 @@
 
 <#IHM> a <#Minor> ;
 	<#has_supervisor> sco:MarcoWinckler ;
-	# TODO : mandotory and optional courses
-	<#has_mandatory_courses> <#EIIN> ;
-	<#has_optional_courses> <#EIIN> .
+	<#has_mandatory_courses>
+		<#EIINH900>,
+		<#EIINH901>,
+		<#EIINH902>,
+		<#EIINH903>,
+		<#EIINH904>,
+		<#EIINH905> ;
+	<#has_optional_courses>
+		<#EIIN927>, 
+		<#EIIN928>, 
+		<#EIIN933>, 
+		<#EIIN942>, 
+		<#EIIN949> ;
+	<#has_representative> sco:21500047 , sco:21999999 .
 
 <#IMAFA> a <#Minor> .
 
@@ -69,6 +80,54 @@
 <#Web> a <#Minor> .
 
 ### Courses ###
+<#EIINH900> a <#Course> ;
+	<#id_course> "EIINH900" ;
+	<#subject> "Conception et evaluation des IHM 1" ;
+	<#has_supervisor> sco:MarcoWinckler ;
+	<#has_teacher> sco:MarcoWinckler .
+
+<#EIINH901> a <#Course> ;
+	<#id_course> "EIINH901" ;
+	<#subject> "Adaptation des interfaces" ;
+	<#has_supervisor> sco:AnneMarieDery ;
+	<#has_teacher> sco:AnneMarieDery .
+
+<#EIINH902> a <#Course> ;
+	<#id_course> "EIINH902" ;
+	<#subject> "Conception et evaluation des IHM 2" ;
+	<#has_supervisor> sco:MarcoWinckler ;
+	<#has_teacher> sco:MarcoWinckler .
+
+<#EIINH903> a <#Course> ;
+	<#id_course> "EIINH903" ;
+	<#subject> "Interfaces reparties" ;
+	<#has_supervisor> sco:AnneMarieDery ;
+	<#has_teacher> sco:AnneMarieDery .
+
+<#EIINH904> a <#Course> ;
+	<#id_course> "EIINH904" ;
+	<#subject> "Interfaces tactiles" ;
+	<#has_supervisor> sco:AnneMarieDery ;
+	<#has_teacher> sco:AnneMarieDery .
+
+<#EIINH905> a <#Course> ;
+	<#id_course> "EIINH905" ;
+	<#subject> "Techniques dinteractions et multimodalites" ;
+	<#has_supervisor> sco:MarcoWinckler ;
+	<#has_teacher> sco:MarcoWinckler .
+
+<#EIIN927> a <#Course> ;
+	<#id_course> "EIIN927" ;
+	<#subject> "Programmation web client side" ;
+	<#has_supervisor> sco:MichelBuffa ;
+	<#has_teacher> sco:MichelBuffa .
+
+<#EIIN928> a <#Course> ;
+	<#id_course> "EIIN928" ;
+	<#subject> "Programmation web server side" ;
+	<#has_supervisor> sco:PeterSander ;
+	<#has_teacher> sco:PeterSander .
+
 <#EIIN933> a <#Course> ;
 	<#id_course> "EIIN933" ;
 	<#subject> "From Shallow to Deep Learning for Multimedia data" ;

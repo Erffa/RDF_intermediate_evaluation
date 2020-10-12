@@ -95,7 +95,26 @@
 	<#sexe> "M" ;
 	<#mail_univ> "yves.roudier@univ-cotedazur.fr" .
 
+<#AnneMarieDery> a <#Teacher> ;
+	<#firstname> "Anne-Marie" ;
+	<#lastname> "Dery" ;
+	<#sexe> "F" ;
+	<#mail_univ> "anne-marie.dery@univ-cotedazur.fr" .
+
+<#MichelBuffa> a <#Teacher> ;
+	<#firstname> "Michel" ;
+	<#lastname> "Buffa" ;
+	<#sexe> "M" ;
+	<#mail_univ> "michel.buffa@univ-cotedazur.fr" .
+
+<#PeterSander> a <#Teacher> ;
+	<#firstname> "Peter" ;
+	<#lastname> "Sander" ;
+	<#sexe> "M" ;
+	<#mail_univ> "peter.sander@univ-cotedazur.fr" .
+
 ### Students (delegates) ###
+### MAM ###
 <#21601834> a <#PolyStudent> ;  
 	# Person properties
 	<#firstname> "Ilea" ;
@@ -138,4 +157,49 @@
 	<#major> org:MAM ;
 	<#minor> org:SD ;
 	<#opt_courses>	org:EIIN933 , org:EIIN936 , org:EIIN942 , org:EIIN944 , org:EIIN945 ;
+	<#has_block_release> false .
+
+### SI ###
+<#21500047> a <#PolyStudent> ;  
+	# Person properties
+	<#firstname> "Florent" ;
+	<#lastname> "Robert" ;
+	<#birthday> "1997-05-22"^^xsd:date ;
+	<#sexe> "M" ;
+	<#nationality> "FR" ;
+	<#phone> "+33600000000" ; 
+	<#mail_private> "KINOWAleBG@gmail.com" ;
+	<#shoesize> 42.0 ;
+	# UnivMember
+	<#id_univ> "#21500047" ;
+	<#mail_univ> "florent.robert@etu.univ-cotedazur.fr" ;
+	# PolyStudent
+	<#school_year> 5 ;
+	<#polypoint> 0 ;
+	<#toeic> true ;
+	<#major> org:SI ;
+	<#minor> org:IHM ;
+	<#opt_courses>	org:EIIN927, org:EIIN928, org:EIIN933, org:EIIN942, org:EIIN949 ;
+	<#has_block_release> false .
+
+<#21999999> a <#PolyStudent> ;  
+	# Person properties
+	<#firstname> "Ganon" ;
+	<#lastname> "Dorf" ;
+	<#birthday> "1900-01-01"^^xsd:date ;
+	<#sexe> "M" ;
+	<#nationality> "FR" ;
+	<#phone> "+33699999999" ; 
+	<#mail_private> "ganondorf@gmail.com" ;
+	<#shoesize> 499.0 ;
+	# UnivMember
+	<#id_univ> "#21999999" ;
+	<#mail_univ> "ganon.dorf@etu.univ-cotedazur.fr" ;
+	# PolyStudent
+	<#school_year> 5 ;
+	<#polypoint> 673 ;
+	<#toeic> true ;
+	<#major> org:SI ;
+	<#minor> org:IHM ;
+	<#opt_courses>	org:EIIN927, org:EIIN928, org:EIIN933, org:EIIN942, org:EIIN949 ;
 	<#has_block_release> false .

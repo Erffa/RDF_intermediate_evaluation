@@ -201,5 +201,5 @@
 	<#toeic> true ;
 	<#major> org:SI ;
 	<#minor> org:IHM ;
-	<#opt_courses>	org:EIIN927, org:EIIN928, org:EIIN933, org:EIIN942, org:EIIN949 ;
-	<#has_block_release> false .
+	<#opt_courses>	org:EIIN927, org:EIIN928, org:EIIN933, org:EIIN942 ;
+	<#has_block_release> true .

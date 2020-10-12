@@ -4,7 +4,7 @@
 @prefix		rdfs:	<http://www.w3.org/2000/01/rdf-schema#>	.		# The RDF Schema vocabulary [RDF11-SCHEMA]
 @prefix		xsd:	<http://www.w3.org/2001/XMLSchema#>	.			# Datatypes
 
-@base				<http://polytech.fr/scolarity#> .
+@base				<http://polytech.fr/organisation#> .
 @prefix		org:	<http://polytech.fr/organisation#> .
 @prefix		sco:	<http://polytech.fr/scolarity#> .
 
@@ -44,7 +44,7 @@
 	rdfs:label "has_representative"^^xsd:string ;
 	rdfs:comment "the representative of Minor - each Minor should have two representatives, one with a block release and one without"^^xsd:string ;
 	rdfs:domain <#Minor> ;
-	rdfs:range <#PolyStudent> .
+	rdfs:range sco:PolyStudent .
 
 ##################################################
 <#Course> a rdfs:Class .

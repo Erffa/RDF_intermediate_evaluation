@@ -15,7 +15,7 @@
 
 <#has_minor> a rdf:Property ;
 	rdfs:label "Major"^^xsd:string ;
-	rdfs:comment "a Major is the main branch of education of a PolyStudent"^^xsd:string .
+	rdfs:comment "list of minors of a Major"^^xsd:string .
 	rdfs:domain <#Major> ;
 	rdfs:range <#Minor> .
 
@@ -33,7 +33,7 @@
 <#has_mandatory_courses> a rdf:Property ;
 	rdfs:subPropertyOf	<#has_courses> ;
 	rdfs:label "has_mandatory_courses"^^xsd:string ;
-	rdfs:comment "an optional Course of a Minor"^^xsd:string .
+	rdfs:comment "an mandatory Course of a Minor"^^xsd:string .
 
 <#has_optional_courses> a rdf:Property ;
 	rdfs:subPropertyOf	<#has_courses> ;

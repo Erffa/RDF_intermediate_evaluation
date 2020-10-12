@@ -77,7 +77,7 @@
 
 <#mail_univ> a rdf:Property ;
   rdfs:label		"mail_univ"^^xsd:string ;
-  rdfs:comment	"the professional maill of an UnivMember (ex : firstname.lastname@etu.unice.fr)"^^xsd:string ;
+  rdfs:comment	"the professional mail of an UnivMember (ex : firstname.lastname@etu.unice.fr)"^^xsd:string ;
   rdfs:domain 	<#UnivMember> ;
   rdfs:range		xsd:string .
 
@@ -125,7 +125,7 @@
 
 <#has_block_release> a rdf:Property ;
   rdfs:label		"has_block_release"^^xsd:string ;
-  rdfs:comment	"boolean, true if a PolyStudent has a bllock release"^^xsd:string ;
+  rdfs:comment	"boolean, true if a PolyStudent has a block release"^^xsd:string ;
   rdfs:domain 	<#PolyStudent> ;
   rdfs:range		xsd:boolean .
 

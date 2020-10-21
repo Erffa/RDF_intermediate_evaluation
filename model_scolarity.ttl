@@ -1,12 +1,12 @@
 #################################################
 
-@prefix 	rdf: 	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .	# The RDF built-in vocabulary [RDF11-SCHEMA]
-@prefix 	rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>	.		# The RDF Schema vocabulary [RDF11-SCHEMA]
-@prefix 	xsd: 	<http://www.w3.org/2001/XMLSchema#>	.			# Datatypes
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>	.
+@prefix xsd: 	<http://www.w3.org/2001/XMLSchema#>	.
 
 @base 				<http://polytech.fr/scolarity> .
-@prefix 	org: 	<http://polytech.fr/organisation#> .
-@prefix 	sco: 	<http://polytech.fr/scolarity#> .
+@prefix org: 	<http://polytech.fr/organisation#> .
+@prefix sco:  <http://polytech.fr/scolarity#> .
 
 #################################################
 <#Person> a rdfs:Class ;
@@ -67,7 +67,6 @@
   rdfs:subClassOf	<#Person> ;
   rdfs:label		"UnivMember"^^xsd:string ;
   rdfs:comment	"a UnivMember is a Person tied to the University"^^xsd:string .
-
 
 <#id_univ> a rdf:Property ;
   rdfs:label		"id_univ"^^xsd:string ;

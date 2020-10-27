@@ -1,0 +1,19 @@
+Afficher les infos de l'étudiant Barthelemy avec "select where"
+
+Afficher les infos de l'étudiant Barthelemy avec "construct where"
+
+Afficher le prof responsable de la SI
+
+L'étudiant Erwan est il en SD ?
+
+Le prof responsable de IHM est il le meme que celui qui assure le cours EIINH900 ?
+
+Afficher les étudiants qui ont une pointure minimale de 43
+
+(On peut faire un truc avec distinct ???)
+
+Insert un nouvel étudiant
+
+Le supprimer par la suite
+
+(Une dernière idée pour la 10ème requete ???)

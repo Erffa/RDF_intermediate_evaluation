@@ -10,18 +10,54 @@
 
 #################################################
 
-### Teachers ###
+### Teachers ### 
+<#AnneMarieDery> a <#Teacher>;
+	<#firstname> "Anne-Marie";
+	<#lastname> "Dery";
+	<#sexe> "F";
+	<#mail_univ> "anne-marie.dery@univ-cotedazur.fr".
+
+<#AntitzaDantcheva> a <#Teacher>;
+	<#firstname> "Antitza";
+	<#lastname> "Dantcheva";
+	<#sexe> "F";
+	<#mail_univ> "antitza.dantcheva@univ-cotedazur.fr".
+
+<#AntoniaEttorre> a <#Teacher>;
+	<#firstname> "Antonia";
+	<#lastname> "Ettorre";
+	<#sexe> "F";
+	<#mail_univ> "antonia.ettorre@etu.univ-cotedazur.fr".
+
 <#CatherineFaronZucker> a <#Teacher> ;
 	<#firstname> "Catherine" ;
 	<#lastname> "Faron Zucker" ;
 	<#sexe> "F" ;
 	<#mail_univ> "catherine.faron-zucker@univ-cotedazur.fr" .
 
-<#DianeLingrand> a <#Teacher> ;
-	<#firstname> "Diane" ;
-	<#lastname> "Lingrand" ;
-	<#sexe> "F" ;
-	<#mail_univ> "diane.lingrand@univ-cotedazur.fr" .
+<#DianaResmerita> a <#Teacher>;
+	<#firstname> "Diana";
+	<#lastname> "Resmerita";
+	<#sexe> "F";
+	<#mail_univ> "diana.resmerita@etu.univ-cotedazur.fr".
+
+<#DianeLingrand> a <#Teacher>;
+	<#firstname> "Diane";
+	<#lastname> "Lingrand";
+	<#sexe> "F";
+	<#mail_univ> "diane.lingrand@univ-cotedazur.fr".
+
+<#EvaGilSanAntonio> a <#Teacher>;
+	<#firstname> "Eva";
+	<#lastname> "Gil San Antonio";
+	<#sexe> "F";
+	<#mail_univ> "eva.gil-san-antonio@etu.univ-cotedazur.fr".
+
+<#FlorentLafarge> a <#Teacher> ;
+	<#firstname> "Florent" ;
+	<#lastname> "Lafarge" ;
+	<#sexe> "M" ;
+	<#mail_univ> "florent.lafarge@univ-cotedazur.fr".
 
 <#FredericPrecioso> a <#Teacher> ;
 	<#firstname> "Frédéric" ;
@@ -47,11 +83,17 @@
 	<#sexe> "F" ;
 	<#mail_univ> "karima.boudaoud@univ-cotedazur.fr" .
 
+<#LaureBlancFeraud> a <#Teacher> ;
+	<#firstname> "Laure" ;
+	<#lastname> "Blanc-Feraud" ;
+	<#sexe> "F" ;
+	<#mail_univ> "leo.donati@univ-cotedazur.fr" .
+
 <#LeoDonati> a <#Teacher> ;
 	<#firstname> "Leo" ;
 	<#lastname> "Donati" ;
 	<#sexe> "M" ;
-	<#mail_univ> "leo.donati@univ-cotedazur.fr" .
+	<#mail_univ> "laure.blanc-feraud@univ-cotedazur.fr" .
 
 <#LionelFillatre> a <#Teacher> ;
 	<#firstname> "Lionel" ;
@@ -65,23 +107,53 @@
 	<#sexe> "M" ;
 	<#mail_univ> "marc.antonini@univ-cotedazur.fr" .
 
-<#MarcoWinckler> a <#Teacher> ;
-	<#firstname> "Marco" ;
-	<#lastname> "Winckler" ;
+<#MarcoWinckler> a <#Teacher>;
+	<#firstname> "Marco";
+	<#lastname> "Winckler";
+	<#sexe> "M";
+	<#mail_univ> "marco.winckler@univ-cotedazur.fr".
+
+<#MarieGuyomard> a <#Teacher> ;
+	<#firstname> "Marie" ;
+	<#lastname> "Guyomard" ;
+	<#sexe> "F" ;
+	<#mail_univ> "marie.guyomard@univ-cotedazur".
+
+<#MichelBuffa> a <#Teacher>;
+	<#firstname> "Michel";
+	<#lastname> "Buffa";
+	<#sexe> "M";
+	<#mail_univ> "michel.buffa@univ-cotedazur.fr".
+
+<#OlivierCorby> a <#Teacher> ;
+	<#firstname> "Olivier" ;
+	<#lastname> "Corby" ;
 	<#sexe> "M" ;
-	<#mail_univ> "winckler@unice.fr" .
+	<#mail_univ> "olivier.corby@univ-cotedazur.fr" .
+
+<#PeterSander> a <#Teacher> ;
+	<#firstname> "Peter" ;
+	<#lastname> "Sander" ;
+	<#sexe> "M" ;
+	<#mail_univ> "peter.sander@univ-cotedazur.fr" .
 
 <#PierreAlliez> a <#Teacher> ;
 	<#firstname> "Pierre" ;
 	<#lastname> "Alliez" ;
 	<#sexe> "M" ;
-	<#mail_univ> "pierre.alliez@inria.fr" .
+	<#mail_univ> "pierre.alliez@univ-cotedazur.fr" .
 
 <#PierreMathieu> a <#Teacher> ;
 	<#firstname> "Pierre" ;
 	<#lastname> "Mathieu" ;
 	<#sexe> "M" ;
 	<#mail_univ> "pierre.mathieu@univ-cotedazur.fr" .
+
+<#SarahLaroui> a <#Teacher>;
+	<#firstname> "Sarah";
+	<#lastname> "Laroui";
+	<#sexe> "F";
+	<#mail_univ> "sarah.laroui@etu.univ-cotedazur.fr".
 
 <#XavierDescombes> a <#Teacher> ;
 	<#firstname> "Xavier" ;
@@ -95,23 +167,7 @@
 	<#sexe> "M" ;
 	<#mail_univ> "yves.roudier@univ-cotedazur.fr" .
 
-<#AnneMarieDery> a <#Teacher> ;
-	<#firstname> "Anne-Marie" ;
-	<#lastname> "Dery" ;
-	<#sexe> "F" ;
-	<#mail_univ> "anne-marie.dery@univ-cotedazur.fr" .
 
-<#MichelBuffa> a <#Teacher> ;
-	<#firstname> "Michel" ;
-	<#lastname> "Buffa" ;
-	<#sexe> "M" ;
-	<#mail_univ> "michel.buffa@univ-cotedazur.fr" .
-
-<#PeterSander> a <#Teacher> ;
-	<#firstname> "Peter" ;
-	<#lastname> "Sander" ;
-	<#sexe> "M" ;
-	<#mail_univ> "peter.sander@univ-cotedazur.fr" .
 
 ### Students (delegates) ###
 ### MAM ###

@@ -1,12 +1,12 @@
 #################################################
 
-@prefix		rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .	# The RDF built-in vocabulary [RDF11-SCHEMA]
-@prefix		rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .		# The RDF Schema vocabulary [RDF11-SCHEMA]
-@prefix		xsd:	<http://www.w3.org/2001/XMLSchema#> .			# Datatypes
+@prefix	rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix	rdfs:	<http://www.w3.org/2000/01/rdf-schema#>.
+@prefix	xsd:	<http://www.w3.org/2001/XMLSchema#>.
 
-@base			<http://polytech.fr/organisation#> .
-@prefix		org:	<http://polytech.fr/organisation#> .
-@prefix		sco:	<http://polytech.fr/scolarity#> .
+@base			<http://polytech.fr/organisation#>.
+@prefix	org:	<http://polytech.fr/organisation#>.
+@prefix	sco:	<http://polytech.fr/scolarity#>.
 
 #################################################
 
@@ -15,29 +15,29 @@
 <#SI> a <#Major> ;
 	<#has_supervisor> sco:YvesRoudier ;
 	<#has_minor> 
-		<#AL> , 
-		<#CASPAR> ,
-		<#IAM> ,
-		<#IHM> ,
-		<#IMAFA> ,
+		<#AL>, 
+		<#CASPAR>,
+		<#IAM>,
+		<#IHM>,
+		<#IMAFA>,
 		<#SD>,
-		<#Web> .
+		<#Web>.
 	
 <#MAM> a <#Major> ;
 	<#has_supervisor> sco:JeanBaptisteCaillau ;
 	<#has_minor> 
-		<#IMAFA> ,
-		<#INUM> ,
-		<#SD> .
+		<#IMAFA>,
+		<#INUM>,
+		<#SD>.
 	
 #### Minor ####
-<#AL> a <#Minor> .
+<#AL> a <#Minor>.
 
-<#CASPAR> a <#Minor> .
+<#CASPAR> a <#Minor>.
 
-<#IAM> a <#Minor> .
+<#IAM> a <#Minor>.
 
-<#IHM> a <#Minor> ;
+<#IHM> a <#Minor>;
 	<#has_supervisor> sco:MarcoWinckler ;
 	<#has_mandatory_courses>
 		<#EIINH900>,
@@ -51,46 +51,50 @@
 		<#EIIN928>, 
 		<#EIIN933>, 
 		<#EIIN942>, 
-		<#EIIN949> ;
-	<#has_representative> sco:21500047 , sco:21999999 .
+		<#EIIN949>;
+	<#has_representative>
+		sco:21500047,
+		sco:21999999 .
 
-<#IMAFA> a <#Minor> .
+<#IMAFA> a <#Minor>.
 
-<#INUM> a <#Minor> .
+<#INUM> a <#Minor>.
 
-<#SD> a <#Minor> ;
+<#SD> a <#Minor>;
 	<#has_supervisor> sco:LionelFillatre ;
 	<#has_mandatory_courses>
-		<#EIIN934> ,
-		<#EIIN935> ,
-		<#EIIN938> ,
-		<#EIIN939> ,
-		<#EIIN947> ,
-		<#EIIN948> ;
+		<#EIIN934>,
+		<#EIIN935>,
+		<#EIIN938>,
+		<#EIIN939>,
+		<#EIIN947>,
+		<#EIIN948>;
 	<#has_optional_courses>
-		<#EIIN933> ,
-		<#EIIN936> ,
-		<#EIIN942> ,
-		<#EIIN944> ,
-		<#EIIN949> ,
-		<#EIIN951> ,
-		<#EIIN945> ;
-	<#has_representative> sco:21601080 , sco:21601834 .
+		<#EIIN933>,
+		<#EIIN936>,
+		<#EIIN942>,
+		<#EIIN944>,
+		<#EIIN949>,
+		<#EIIN951>,
+		<#EIIN945>;
+	<#has_representative> 
+		sco:21601080,
+		sco:21601834 .
 
-<#Web> a <#Minor> .
+<#Web> a <#Minor>.
 
 ### Courses ###
-<#EIINH900> a <#Course> ;
-	<#id_course> "EIINH900" ;
-	<#subject> "Conception et evaluation des IHM 1" ;
-	<#has_supervisor> sco:MarcoWinckler ;
-	<#has_teacher> sco:MarcoWinckler .
+<#EIINH900> a <#Course>;
+	<#id_course> "EIINH900";
+	<#subject> "Conception et evaluation des IHM 1";
+	<#has_supervisor> sco:MarcoWinckler;
+	<#has_teacher> sco:MarcoWinckler.
 
-<#EIINH901> a <#Course> ;
-	<#id_course> "EIINH901" ;
-	<#subject> "Adaptation des interfaces" ;
-	<#has_supervisor> sco:AnneMarieDery ;
-	<#has_teacher> sco:AnneMarieDery .
+<#EIINH901> a <#Course>;
+	<#id_course> "EIINH901";
+	<#subject> "Adaptation des interfaces";
+	<#has_supervisor> sco:AnneMarieDery;
+	<#has_teacher> sco:AnneMarieDery.
 
 <#EIINH902> a <#Course> ;
 	<#id_course> "EIINH902" ;
@@ -138,7 +142,16 @@
 	<#id_course> "EIIN934" ;
 	<#subject> "Applied Artificial Intelligence" ;
 	<#has_supervisor> sco:MarcAntonini ;
-	<#has_teacher> sco:MarcAntonini .
+	<#has_teacher> 
+		sco:MarcAntonini,
+		sco:LaureBlancFeraud,
+		sco:FlorentLafarge,
+		sco:XavierDescombes
+		sco:AntitzaDantcheva,
+		sco:MarcAntonini,
+		sco:EvaGilSanAntonio,
+		sco:SarahLaroui.
+
 
 <#EIIN935> a <#Course> ;
 	<#id_course> "EIIN935" ;
@@ -176,48 +189,44 @@
 	<#has_supervisor> sco:LeoDonati ;
 	<#has_teacher> sco:LeoDonati .
 
-<#EIIN945> a <#Course> ;
-	<#id_course> "EIIN945" ;
-	<#subject> "Security and Privacy 3.0" ;
-	<#has_supervisor> sco:KarimaBoudaoud ;
-	<#has_teacher> sco:KarimaBoudaoud .
+<#EIIN945> a <#Course>;
+	<#id_course> "EIIN945";
+	<#subject> "Security and Privacy 3.0";
+	<#has_supervisor> sco:KarimaBoudaou;
+	<#has_teacher> sco:KarimaBoudaoud.
 
-<#EIIN947> a <#Course> ;
-	<#id_course> "EIIN947" ;
-	<#subject> "Big Data Technologies" ;
-	<#has_supervisor> sco:LionelFillatre ;
-	<#has_teacher> sco:LionelFillatre .
+<#EIIN947> a <#Course>;
+	<#id_course> "EIIN947";
+	<#subject> "Big Data Technologies";
+	<#has_supervisor> sco:LionelFillatre;
+	<#has_teacher>
+		sco:DianaResmerita,
+		sco:LionelFillatre,
+		sco:MarieGuyomard.
 
-<#EIIN948> a <#Course> ;
-	<#id_course> "EIIN948" ;
-	<#subject> "Machine Learning for Image Analysis" ;
-	<#has_supervisor> sco:XavierDescombes ;
-	<#has_teacher> sco:XavierDescombes .
+<#EIIN948> a <#Course>;
+	<#id_course> "EIIN948";
+	<#subject> "Machine Learning for Image Analysis";
+	<#has_supervisor> sco:XavierDescombes;
+	<#has_teacher>
+		sco:EvaGilSanAntonio,
+		sco:LaureBlancFeraud,
+		sco:MarcAntonini,
+		sco:PierreAlliez,
+		sco:SarahLaroui,
+		sco:XavierDescombes.
 
-<#EIIN949> a <#Course> ;
-	<#id_course> "EIIN949" ;
-	<#subject> "Web Data" ;
-	<#has_supervisor> sco:CatherineFaronZucker ;
-	<#has_teacher> sco:CatherineFaronZucker .
+<#EIIN949> a <#Course>;
+	<#id_course> "EIIN949";
+	<#subject> "Web Data";
+	<#has_supervisor> sco:CatherineFaronZucker;
+	<#has_teacher>
+		sco:AntoniaEttorre,
+		sco:CatherineFaronZucker,
+		sco:OlivierCorby.
 
-<#EIIN951> a <#Course> ;
-	<#id_course> "EIIN951" ;
-	<#subject> "Web Semantic" ;
-	<#has_supervisor> sco:CatherineFaronZucker ;
-	<#has_teacher> sco:CatherineFaronZucker .
-
-# - mentionned teachers - #
-#CatherineFaronZucker
-#DianeLingrand
-#FredericPrecioso
-#GiovanniNeglia
-#JeanBaptisteCaillau
-#KarimaBoudaoud
-#LeoDonati
-#LionelFillatre
-#MarcAntonini
-#MarcoWinckler
-#PierreAlliez
-#PierreMathieu
-#XavierDescombes
-#YvesRoudier
+<#EIIN951> a <#Course>;
+	<#id_course> "EIIN951";
+	<#subject> "Web Semantic";
+	<#has_supervisor> sco:CatherineFaronZucker;
+	<#has_teacher> sco:CatherineFaronZucker.

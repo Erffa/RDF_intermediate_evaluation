@@ -14,16 +14,16 @@
 	rdfs:comment	"a Person is a human being"^^xsd:string .
 
 <#firstname> a rdf:Property ;
-  rdfs:label		"firstname"^^xsd:string ;
-  rdfs:comment	"the first name of a Person"^^xsd:string ;
-  rdfs:domain		<#Person> ;
-  rdfs:range		xsd:Name .
+	rdfs:label		"firstname"^^xsd:string ;
+	rdfs:comment	"the first name of a Person"^^xsd:string ;
+	rdfs:domain		<#Person> ;
+	rdfs:range		xsd:Name .
 
 <#lastname> a rdf:Property ;
-  rdfs:label		"lastname"^^xsd:string ;
-  rdfs:comment	"the last name of a Person"^^xsd:string ;
-  rdfs:domain		<#Person> ;
-  rdfs:range		xsd:Name .
+	rdfs:label		"lastname"^^xsd:string ;
+	rdfs:comment	"the last name of a Person"^^xsd:string ;
+	rdfs:domain		<#Person> ;
+	rdfs:range		xsd:Name .
 
 <#birthday> a rdf:Property ;
   rdfs:label		"birthday"^^xsd:string ;

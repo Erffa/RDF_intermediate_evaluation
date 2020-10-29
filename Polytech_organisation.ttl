@@ -146,7 +146,7 @@
 		sco:MarcAntonini,
 		sco:LaureBlancFeraud,
 		sco:FlorentLafarge,
-		sco:XavierDescombes
+		sco:XavierDescombes,
 		sco:AntitzaDantcheva,
 		sco:MarcAntonini,
 		sco:EvaGilSanAntonio,

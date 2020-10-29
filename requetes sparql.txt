@@ -1,4 +1,5 @@
-Afficher les infos de l'étudiant 21600961
+1. Afficher les infos de l'étudiant 21600961
+# filter regex
 prefix sco:<http://polytech.fr/scolarity#>
 
 select * where {
@@ -7,22 +8,41 @@ select * where {
  ?x ?p ?y
 }
 
-Construction du graphe associé à l'élève 21600961
+2. Construction du graphe associé à l'élève 21600961
+# construct 
 prefix sco:<http://polytech.fr/scolarity#>
 
 construct {
-?x ?p ?y }
- where {
+?x ?p ?y 
+} where {
   ?x a sco:Person
  filter regex(str(?x), "21600961")
  ?x ?p ?y
+}
+
+3. Affiche tous les profs d'une filière et le nombre de cours qu'ils donnent
+# count exists
+prefix	org:	<http://polytech.fr/organisation#>.
+prefix	sco:	<http://polytech.fr/scolarity#>.
+
+select ?t (count(?e) as ?c) ?b where {
+	?e org:has_teacher ?t
+	exists{ org:IHM org:has_courses ?e }
+} group by ?t
+
+4. Le prof responsable de IHM est il le meme que celui qui assure le cours EIINH900 ?
+# ask
+prefix	org:	<http://polytech.fr/organisation#>.
+ask  {
+	org:IHM org:has_supervisor ?p
+	org:EIINH900  org:has_teacher ?p
 }
 
 Afficher le prof responsable de la SI
 
 L'étudiant Erwan est il en SD ?
 
-Le prof responsable de IHM est il le meme que celui qui assure le cours EIINH900 ?
+
 
 Afficher les étudiants qui ont une pointure minimale de 43
 

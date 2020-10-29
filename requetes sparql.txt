@@ -1,6 +1,22 @@
-Afficher les infos de l'étudiant Barthelemy avec "select where"
+Afficher les infos de l'étudiant 21600961
+prefix sco:<http://polytech.fr/scolarity#>
 
-Afficher les infos de l'étudiant Barthelemy avec "construct where"
+select * where {
+ ?x a sco:Person
+ filter regex(str(?x), "21600961")
+ ?x ?p ?y
+}
+
+Construction du graphe associé à l'élève 21600961
+prefix sco:<http://polytech.fr/scolarity#>
+
+construct {
+?x ?p ?y }
+ where {
+  ?x a sco:Person
+ filter regex(str(?x), "21600961")
+ ?x ?p ?y
+}
 
 Afficher le prof responsable de la SI
 

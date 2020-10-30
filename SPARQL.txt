@@ -184,6 +184,54 @@ select distinct ?f ?l ?e where {
 } group by ?t
 
 
+<?xml version="1.0" ?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+<head>
+<variable name='t'/>
+<variable name='c'/>
+<variable name='b'/>
+</head>
+<results>
+<result>
+<binding name='t'><uri>http://polytech.fr/scolarity#AnneMarieDery</uri></binding>
+<binding name='c'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>3</literal></binding>
+</result>
+<result>
+<binding name='t'><uri>http://polytech.fr/scolarity#AntoniaEttorre</uri></binding>
+<binding name='c'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>1</literal></binding>
+</result>
+<result>
+<binding name='t'><uri>http://polytech.fr/scolarity#CatherineFaronZucker</uri></binding>
+<binding name='c'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>1</literal></binding>
+</result>
+<result>
+<binding name='t'><uri>http://polytech.fr/scolarity#DianeLingrand</uri></binding>
+<binding name='c'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>1</literal></binding>
+</result>
+<result>
+<binding name='t'><uri>http://polytech.fr/scolarity#FredericPrecioso</uri></binding>
+<binding name='c'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>1</literal></binding>
+</result>
+<result>
+<binding name='t'><uri>http://polytech.fr/scolarity#MarcoWinckler</uri></binding>
+<binding name='c'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>3</literal></binding>
+</result>
+<result>
+<binding name='t'><uri>http://polytech.fr/scolarity#MichelBuffa</uri></binding>
+<binding name='c'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>1</literal></binding>
+</result>
+<result>
+<binding name='t'><uri>http://polytech.fr/scolarity#OlivierCorby</uri></binding>
+<binding name='c'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>1</literal></binding>
+</result>
+<result>
+<binding name='t'><uri>http://polytech.fr/scolarity#PeterSander</uri></binding>
+<binding name='c'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>1</literal></binding>
+</result>
+</results>
+</sparql>
+
+
 ################# REQUETE 4 ###################
 4. Tableau récapitulatif des délégués alternants, non alternants et si leur nombre est valide # count exists, group by
 

@@ -497,4 +497,39 @@ select distinct ( CONCAT(?f, " ", ?l) as ?fullname) ?m (GROUP_CONCAT(DISTINCT ?s
 </sparql>
 
 ################# REQUETE 10 ###################
+10. La liste de tous les élèves qui n'ont pas 12 polypoints ou leur TOIEC (et donc risque le redoublement)
+
+
+prefix sco:<http://polytech.fr/scolarity#>
+select * where {
+  ?s a sco:PolyStudent
+  ?s sco:firstname ?f
+  ?s sco:lastname ?l
+  minus { 
+    ?s sco:polypoint ?p 
+    ?s sco:toeic ?t
+    filter(?p >= 12 && ?t) }
+} 
+
+
+<?xml version="1.0" ?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+<head>
+<variable name='s'/>
+<variable name='f'/>
+<variable name='l'/>
+</head>
+<results>
+<result>
+<binding name='s'><uri>http://polytech.fr/scolarity#21500047</uri></binding>
+<binding name='f'><literal>Florent</literal></binding>
+<binding name='l'><literal>Robert</literal></binding>
+</result>
+<result>
+<binding name='s'><uri>http://polytech.fr/scolarity#21601080</uri></binding>
+<binding name='f'><literal>Hugo</literal></binding>
+<binding name='l'><literal>Lavezac</literal></binding>
+</result>
+</results>
+</sparql>
 

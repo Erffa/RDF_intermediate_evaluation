@@ -1,0 +1,452 @@
+################# REQUETE 1 ###################
+1. Afficher les infos de l'étudiant 21600961 # select where, filter, regex
+
+prefix sco:<http://polytech.fr/scolarity#>
+select * where {
+ ?x a sco:Person
+ filter regex(str(?x), "21600961")
+ ?x ?p ?y
+}
+
+<?xml version="1.0" ?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+<head>
+<variable name='x'/>
+<variable name='p'/>
+<variable name='y'/>
+</head>
+<results>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#birthday</uri></binding>
+<binding name='y'><literal datatype='http://www.w3.org/2001/XMLSchema#date'>1999-04-16</literal></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#firstname</uri></binding>
+<binding name='y'><literal>Barthelemy</literal></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#id_univ</uri></binding>
+<binding name='y'><literal>#21600961</literal></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#lastname</uri></binding>
+<binding name='y'><literal>Passin-Cauneau</literal></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#mail_private</uri></binding>
+<binding name='y'><literal>barthelemy.passin-cauneau@orange.fr</literal></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#mail_univ</uri></binding>
+<binding name='y'><literal>barthelemy.passin-cauneau@etu.unice.fr</literal></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#major</uri></binding>
+<binding name='y'><uri>http://polytech.fr/organisation#SI</uri></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#minor</uri></binding>
+<binding name='y'><uri>http://polytech.fr/organisation#IHM</uri></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#nationality</uri></binding>
+<binding name='y'><literal>FR</literal></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#opt_courses</uri></binding>
+<binding name='y'><uri>http://polytech.fr/organisation#EIIN927</uri></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#opt_courses</uri></binding>
+<binding name='y'><uri>http://polytech.fr/organisation#EIIN928</uri></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#opt_courses</uri></binding>
+<binding name='y'><uri>http://polytech.fr/organisation#EIIN933</uri></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#opt_courses</uri></binding>
+<binding name='y'><uri>http://polytech.fr/organisation#EIIN942</uri></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#opt_courses</uri></binding>
+<binding name='y'><uri>http://polytech.fr/organisation#EIIN949</uri></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#phone</uri></binding>
+<binding name='y'><literal>+33675638760</literal></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#polypoint</uri></binding>
+<binding name='y'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>16</literal></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#school_year</uri></binding>
+<binding name='y'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>5</literal></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#sexe</uri></binding>
+<binding name='y'><literal>M</literal></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#shoesize</uri></binding>
+<binding name='y'><literal datatype='http://www.w3.org/2001/XMLSchema#decimal'>45.5</literal></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://polytech.fr/scolarity#toeic</uri></binding>
+<binding name='y'><literal datatype='http://www.w3.org/2001/XMLSchema#boolean'>true</literal></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding>
+<binding name='y'><uri>http://polytech.fr/scolarity#PolyStudent</uri></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding>
+<binding name='y'><uri>http://polytech.fr/scolarity#Person</uri></binding>
+</result>
+<result>
+<binding name='x'><uri>http://polytech.fr/scolarity#21600961</uri></binding>
+<binding name='p'><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding>
+<binding name='y'><uri>http://polytech.fr/scolarity#UnivMember</uri></binding>
+</result>
+</results>
+</sparql>
+
+################# REQUETE 2 ###################
+2. Construction du graphe associé à l'élève 21600961 # construct where
+
+prefix sco:<http://polytech.fr/scolarity#>
+construct {
+?x ?p ?y
+} where {
+  ?x a sco:Person
+ filter regex(str(?x), "21600961")
+ ?x ?p ?y
+}
+
+<http://polytech.fr/scolarity#21600961> a <http://polytech.fr/scolarity#Person> ;
+  a <http://polytech.fr/scolarity#PolyStudent> ;
+  a <http://polytech.fr/scolarity#UnivMember> ;
+  <http://polytech.fr/scolarity#birthday> "1999-04-16"^^xsd:date ;
+  <http://polytech.fr/scolarity#firstname> "Barthelemy" ;
+  <http://polytech.fr/scolarity#id_univ> "#21600961" ;
+  <http://polytech.fr/scolarity#lastname> "Passin-Cauneau" ;
+  <http://polytech.fr/scolarity#mail_private> "barthelemy.passin-cauneau@orange.fr" ;
+  <http://polytech.fr/scolarity#mail_univ> "barthelemy.passin-cauneau@etu.unice.fr" ;
+  <http://polytech.fr/scolarity#major> <http://polytech.fr/organisation#SI> ;
+  <http://polytech.fr/scolarity#minor> <http://polytech.fr/organisation#IHM> ;
+  <http://polytech.fr/scolarity#nationality> "FR" ;
+  <http://polytech.fr/scolarity#opt_courses> <http://polytech.fr/organisation#EIIN927> ;
+  <http://polytech.fr/scolarity#opt_courses> <http://polytech.fr/organisation#EIIN928> ;
+  <http://polytech.fr/scolarity#opt_courses> <http://polytech.fr/organisation#EIIN933> ;
+  <http://polytech.fr/scolarity#opt_courses> <http://polytech.fr/organisation#EIIN942> ;
+  <http://polytech.fr/scolarity#opt_courses> <http://polytech.fr/organisation#EIIN949> ;
+  <http://polytech.fr/scolarity#phone> "+33675638760" ;
+  <http://polytech.fr/scolarity#polypoint> 16 ;
+  <http://polytech.fr/scolarity#school_year> 5 ;
+  <http://polytech.fr/scolarity#sexe> "M" ;
+  <http://polytech.fr/scolarity#shoesize> "45.5"^^xsd:decimal ;
+  <http://polytech.fr/scolarity#toeic> true .
+
+################# REQUETE 3 ###################
+3. Affiche tous les profs d'une filière et le nombre de cours qu'ils donnent # distinct exists, group by
+
+prefix org: <http://polytech.fr/organisation#>
+prefix sco: <http://polytech.fr/scolarity#>
+select distinct ?f ?l ?e where {
+    ?e org:has_teacher ?t
+    ?t sco:firstname ?f
+    ?t sco:lastname ?l
+    ?t sco:mail_univ ?e
+    exists{ org:IHM org:has_courses ?e }
+} group by ?t
+
+
+################# REQUETE 4 ###################
+4. Tableau récapitulatif des délégués alternants, non alternants et si leur nombre est valide # count exists, group by
+
+prefix org:<http://polytech.fr/organisation#>
+prefix sco:<http://polytech.fr/scolarity#>
+select ?f (count(?r1) as ?nb_alt)  (count(?r2) as ?nb_nonalt) (?nb_alt=1 && ?nb_nonalt=1 as ?valid)  {
+    ?f a org:Minor
+    {
+        ?f org:has_representative ?r1
+        ?r1 sco:has_block_release true
+    }
+    union
+    {    
+        ?f org:has_representative ?r2
+        ?r2 sco:has_block_release true
+    }
+} group by ?f
+
+<?xml version="1.0" ?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+<head>
+<variable name='f'/>
+<variable name='nb_alt'/>
+<variable name='nb_nonalt'/>
+<variable name='valid'/>
+</head>
+<results>
+<result>
+<binding name='f'><uri>http://polytech.fr/organisation#IHM</uri></binding>
+<binding name='nb_alt'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>1</literal></binding>
+<binding name='nb_nonalt'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>1</literal></binding>
+<binding name='valid'><literal datatype='http://www.w3.org/2001/XMLSchema#boolean'>true</literal></binding>
+</result>
+<result>
+<binding name='f'><uri>http://polytech.fr/organisation#SD</uri></binding>
+<binding name='nb_alt'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>1</literal></binding>
+<binding name='nb_nonalt'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>1</literal></binding>
+<binding name='valid'><literal datatype='http://www.w3.org/2001/XMLSchema#boolean'>true</literal></binding>
+</result>
+</results>
+</sparql>
+
+################# REQUETE 5 ###################
+5. Le prof responsable de IHM est il le même que celui qui assure le cours EIINH900 ? # ask
+
+prefix org: <http://polytech.fr/organisation#>
+ask  {
+    org:IHM org:has_supervisor ?p
+    org:EIINH900 org:has_teacher ?p
+}
+
+<?xml version="1.0" ?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+<head>
+</head>
+<boolean>true</boolean>
+</sparql>
+
+################# REQUETE 6 ###################
+6. Afficher et trier les étudiants qui ont une pointure minimale de 43 # order by
+
+prefix sco:<http://polytech.fr/scolarity#>
+select ?firstname ?lastname ?shoe where {
+  ?x a sco:Person
+  ?x sco:shoesize ?shoe ; sco:firstname ?firstname ; sco:lastname ?lastname
+  filter (?shoe > 43.0)
+} order by desc(?shoe)
+
+<?xml version="1.0" ?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+<head>
+<variable name='firstname'/>
+<variable name='lastname'/>
+<variable name='shoe'/>
+</head>
+<results>
+<result>
+<binding name='firstname'><literal>Ganon</literal></binding>
+<binding name='lastname'><literal>Dorf</literal></binding>
+<binding name='shoe'><literal datatype='http://www.w3.org/2001/XMLSchema#decimal'>499.0</literal></binding>
+</result>
+<result>
+<binding name='firstname'><literal>Barthelemy</literal></binding>
+<binding name='lastname'><literal>Passin-Cauneau</literal></binding>
+<binding name='shoe'><literal datatype='http://www.w3.org/2001/XMLSchema#decimal'>45.5</literal></binding>
+</result>
+<result>
+<binding name='firstname'><literal>Erwan</literal></binding>
+<binding name='lastname'><literal>Gaymard</literal></binding>
+<binding name='shoe'><literal datatype='http://www.w3.org/2001/XMLSchema#decimal'>44.0</literal></binding>
+</result>
+</results>
+</sparql>
+
+################# REQUETE 7 ###################
+7. Créer un nouvel étudiant # insert data
+
+prefix sco:<http://polytech.fr/scolarity#>
+prefix org: <http://polytech.fr/organisation#>
+insert data {
+  sco:21234567 a sco:PolyStudent ; 
+  sco:firstname "Sophie" ;
+  sco:lastname “Allier” ;
+  sco:birthday "1998-10-19"^^xsd:date ;
+  sco:sexe "F" ;
+  sco:nationality "FR" ;
+  sco:phone "+33662766821" ;
+  sco:mail_private “allier.sophie@free.fr” ;
+  sco:shoesize 32 ;
+  sco:id_univ "#21234567" ;
+  sco:mail_univ "ilea.dufraigne@etu.univ-cotedazur.fr" ;
+  sco:school_year 5 ;
+  sco:polypoint 14 ;
+  sco:toeic true ;
+  sco:major org:MAM ;
+  sco:minor org:SD ;
+  sco:opt_courses org:EIIN933 , org:EIIN944 , org:EIIN945 , org:EIIN949 ;
+  sco:has_block_releas true .
+}
+
+<?xml version="1.0" ?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+<head>
+</head>
+<results>
+<result>
+</result>
+</results>
+</sparql>
+
+################# REQUETE 8 ###################
+8. Supprimer le nouvel étudiant # delete where
+
+prefix sco:<http://polytech.fr/scolarity#>
+delete {
+  sco:21234567 ?p ?y
+} where  {
+  sco:21234567 ?p ?y
+}
+
+<?xml version="1.0" ?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+<head>
+</head>
+<results>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+<result>
+</result>
+</results>
+</sparql>
+
+################# REQUETE 9 ###################
+9. Affiche la liste de tous les profs de IHM avec leur nom prénom collé, leur mail et la liste des sujets de tous leurs cours # concat, group_concact, group by
+
+prefix org: <http://polytech.fr/organisation#>.
+prefix sco: <http://polytech.fr/scolarity#>.
+select distinct ( CONCAT(?f, " ", ?l) as ?fullname) ?m (GROUP_CONCAT(DISTINCT ?s; SEPARATOR=", ") as ?courses) where {
+  ?e org:has_teacher ?t
+  ?e org:subject ?s
+  ?t sco:firstname ?f
+  ?t sco:lastname ?l
+  ?t sco:mail_univ ?m
+  exists{ org:IHM org:has_courses ?e }
+} group by ?t
+
+<?xml version="1.0" ?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+<head>
+<variable name='fullname'/>
+<variable name='m'/>
+<variable name='courses'/>
+</head>
+<results>
+<result>
+<binding name='fullname'><literal>Anne-Marie Dery</literal></binding>
+<binding name='m'><literal>anne-marie.dery@univ-cotedazur.fr</literal></binding>
+<binding name='courses'><literal>Adaptation des interfaces, Interfaces reparties, Interfaces tactiles</literal></binding>
+</result>
+<result>
+<binding name='fullname'><literal>Antonia Ettorre</literal></binding>
+<binding name='m'><literal>antonia.ettorre@etu.univ-cotedazur.fr</literal></binding>
+<binding name='courses'><literal>Web Data</literal></binding>
+</result>
+<result>
+<binding name='fullname'><literal>Catherine Faron Zucker</literal></binding>
+<binding name='m'><literal>catherine.faron-zucker@univ-cotedazur.fr</literal></binding>
+<binding name='courses'><literal>Web Data</literal></binding>
+</result>
+<result>
+<binding name='fullname'><literal>Diane Lingrand</literal></binding>
+<binding name='m'><literal>diane.lingrand@univ-cotedazur.fr</literal></binding>
+<binding name='courses'><literal>Interagir dans un monde 3D</literal></binding>
+</result>
+<result>
+<binding name='fullname'><literal>Frédéric Precioso</literal></binding>
+<binding name='m'><literal>frederic.precioso@univ-cotedazur.fr</literal></binding>
+<binding name='courses'><literal>From Shallow to Deep Learning for Multimedia data</literal></binding>
+</result>
+<result>
+<binding name='fullname'><literal>Marco Winckler</literal></binding>
+<binding name='m'><literal>marco.winckler@univ-cotedazur.fr</literal></binding>
+<binding name='courses'><literal>Conception et evaluation des IHM 1, Conception et evaluation des IHM 2, Techniques dinteractions et multimodalites</literal></binding>
+</result>
+<result>
+<binding name='fullname'><literal>Michel Buffa</literal></binding>
+<binding name='m'><literal>michel.buffa@univ-cotedazur.fr</literal></binding>
+<binding name='courses'><literal>Programmation web client side</literal></binding>
+</result>
+<result>
+<binding name='fullname'><literal>Olivier Corby</literal></binding>
+<binding name='m'><literal>olivier.corby@univ-cotedazur.fr</literal></binding>
+<binding name='courses'><literal>Web Data</literal></binding>
+</result>
+<result>
+<binding name='fullname'><literal>Peter Sander</literal></binding>
+<binding name='m'><literal>peter.sander@univ-cotedazur.fr</literal></binding>
+<binding name='courses'><literal>Programmation web server side</literal></binding>
+</result>
+</results>
+</sparql>
+
+################# REQUETE 10 ###################
+
